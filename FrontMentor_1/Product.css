@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+}
+
+.container {
+    margin: 30px auto;
+    padding: 0 30px;
+    display: grid;
+    place-items: center;
+    padding-top: 5rem;
+}
+
+.grid {
+    display: grid;
+    background: white;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+}
+
+.img img {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inherit;
+}
+.img img:last-child {
+    display: none;
+} 
+
+.info{
+    padding: 30px;
+    display: block;
+}
+
+.info h1 {
+    font-family: 'Fraunces';
+    padding-right: 30px;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+.info p {
+    color: hsl(228, 12%, 48%);
+}
+
+.perfume {
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.describe {
+    line-height: 1.8;
+    padding-bottom: 25px;
+}
+
+.price {
+    display: flex;
+    width: 100%;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: large;
+    color: hsl(158, 36%, 37%);
+    padding-bottom: 30px;
+}
+
+.price p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-decoration: line-through;
+    font-size: 13px;
+    margin-top: 9px;
+    padding-left: 20px;
+}
+
+.Btn {
+    background: hsl(158, 36%, 37%);;
+    border-radius: 10px;
+    display: flex;
+    padding: 15px 30px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.Btn p {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-left: -15px;
+}
+
+.Btn img {
+    padding-left: 30px;
+}
+
+.Btn:active, .Btn:hover {
+    background: hsl(212, 21%, 14%);
+    transition: 0.2s ease;
+}
+
+@media screen and (max-width: 646px) {
+
+
+    .container {
+        margin: 30px auto;
+        padding: 0 30px;
+        display: grid;
+        place-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .grid {
+        display: block;
+        text-align: left;
+    }
+    .img img:first-child{
+        display: none;
+    }
+
+    .img img:last-child {
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        display: inherit;
+    }
+}
