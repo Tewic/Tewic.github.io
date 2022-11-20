@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color:  hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Container {
+    display: grid;
+    place-items: center;
+    margin: 30px auto;
+    padding: 0 30px;
+    font-family: 'Overpass';
+    color: hsl(0, 0%, 100%);
+    width: 430px;
+    margin-top: 10rem;
+}
+
+.grid {
+    background: #1e252f;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.star img {
+    padding: 10px;
+    border-radius: 50%;
+    background: hsl(213, 19%, 18%);
+}
+
+.star {
+    margin-bottom: 15px;
+}
+
+.text h2{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+.numbers button {
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.numbers button:hover {
+    background-color: hsl(25, 97%, 53%);
+
+    transition: 0.3s ease;
+}
+
+.numbers button:focus {
+    background: hsl(217, 12%, 63%);
+    transition: 0.3s ease;
+}
+
+.numbers p {
+    margin-top: 13px;
+    margin-left: 16px;
+}
+
+.submit {
+    background: hsl(25, 97%, 53%);
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    padding: 9px 0 9px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 0.3s ease;
+}
+
+
+
+.thankyou {
+    display: grid;
+    place-items: center;
+    margin: 30px auto;
+    padding: 0 30px;
+    font-family: 'Overpass';
+    color: hsl(0, 0%, 100%);
+    width: 390px;
+    height: 100px;
+    margin-top: 10rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.thankyou-con {
+    background: #1e252f;
+    padding: 35px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.Thx-img img {
+    width: 130px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.score {
+    background: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.thankyou-con h2 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.thx-info {
+    color: hsl(217, 12%, 63%);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.thankyou p {
+    text-align: center;
+}
