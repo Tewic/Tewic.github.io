@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-family: 'Red Hat Display';
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 425px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 0px 63px -22px rgba(56,41,224,0.68);
+}
+
+.img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 1px 0px 63px -22px rgba(56,41,224,0.68);
+    max-width: 425px;
+}
+
+.orderSum-con{
+    padding: 20px 40px;
+}
+
+.orderSum-text h2, .orderSum-text p{
+    margin-bottom: 20px;
+}
+
+.orderSum-text h2 {
+    color: hsl(223, 47%, 23%);
+}
+
+.orderSum-text {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.orderSum-text h2 {
+    font-weight: 900;
+}
+
+.orderSum-text p {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    border-radius: 12px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.plan-left{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan img {
+    height: 40px;
+}
+
+.plan-info {
+    font-size: small;
+    margin-left: 15px;
+    line-height: 1.6;
+
+}
+
+.planName {
+    font-weight: 900;
+}
+
+.planPrice {
+    color: hsl(224, 23%, 55%);
+}
+
+.change a {
+    color: hsl(245, 75%, 52%);
+    transition: 0.5s ease;
+}
+
+.change a:hover {
+    transition: 0.5s ease;
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.proceed {
+    padding: 2px;
+    background-color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    box-shadow: -7px 26px 33px -19px rgba(56,41,224,0.68);
+    transition: 0.5s ease;
+}
+
+.proceed:hover {
+    background-color: #766cf1;
+    transition: 0.5s ease;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    transition: 0.5s ease;
+    margin: 20px 0 10px 0;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        max-width: 95%;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    .orderSum-text {
+        max-width: 200px;
+    }
+
+    .orderSum-con{
+        padding: 10px 30px;
+    }
+
+    .plan img {
+        height: 30px;
+    }
+
+    .planName, .planPrice {
+        font-size: 8px;
+    }
+}
