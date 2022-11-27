@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="main-con">
+        <div class="mainText">
+            <h1 id="tom">To-Do Lists</h1>
+        </div>
+        <div class="input">
+            <form>
+                <!--ตรง input text ใช้ placeholder = "Play games" ก็ได้-->
+                <input id="input-text" class="text" type="text" value="Play games" onfocus="if (this.value=='Play games') this.value='';">
+                <P id="input-Btn" class="add">Add</p>
+                <p id="clear" class="clear">Clear List</p>
+            </form>
+        </div>
+    </div>
+    <div id="display">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
