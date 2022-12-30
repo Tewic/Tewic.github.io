@@ -1,0 +1,156 @@
+.bg{
+    background: url("https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnVqaSUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.header {
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.Nav-con{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    cursor: default;
+}
+
+.headerCon {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    padding-right: 2rem;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 13px;
+
+}
+
+.menu li a:hover{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    padding:  13px;
+    border-bottom: 3px solid aliceblue;
+    background: transparent;
+    transition: 0.3s ease;
+
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.FiCode{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.container{
+    z-index: 0;
+}
+
+.CTAText {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    height: 300px;
+    z-index: 0;
+}
+
+.CTA-BTN {
+    background: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: black;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    z-index: 0;
+}
+
+.CTA-BTN:hover {
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    background: transparent;
+    transition: 0.3s ease;
+    z-index: 0;
+}
+
+@media screen and (max-width: 555px) {
+    .mobileMenu {
+        display: block;
+        font-size: 2rem;
+        color: aliceblue;
+        padding-top: 8px;
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    .menu{
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 61px;
+        left: -100%;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .menu.active {
+        background: rgba(0, 0, 0, 1);
+        margin-top: 19px;
+        left: 0%;
+        opacity: 1;
+        z-index: 1;
+        transition: 0.5s ease;
+        align-content: center;
+        padding-left: 0;
+    }
+
+    .menu li{
+        padding-right: 0;
+    }
+
+    .menuLink {
+        display: flex;
+        padding: 10px 0;
+        height: 10vw;
+        justify-content: center;
+    }
+}
+

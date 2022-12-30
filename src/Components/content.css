@@ -1,0 +1,30 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.text-con {
+    display: flex;
+}
+
+.info-con {
+
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    
+}
+
+.name {
+    margin: 2rem 0 0 14.5rem;
+}
+
+.about {
+    margin: 4rem 0 0 14.5rem;
+}
