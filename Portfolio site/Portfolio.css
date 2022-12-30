@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #1B1212;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 4rem 0 4rem;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 2rem;
+    margin: 20px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid aliceblue;
+    transition: 0.2s ease;
+}
+
+.Logo{
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.T {
+    color: #FFD700;
+}
+
+.Detail {
+    color: aliceblue;
+    margin-top: 10rem;
+    margin-left: 8%;
+}
+
+.Detail h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.Detail p {
+    margin-bottom: 40px;
+}
+
+.Detail a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Detail a:hover{
+    background-color: aliceblue;
+    color: #1B1212;
+    transition: 0.5s ease;
+
+}
+
+.YellowShape{
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    margin-top: -20rem;
+    margin-left: 47rem;
+    transition: 0.5s ease;
+}
+
+.YellowShape:hover {
+    transform: translate(-3.1rem, -0.5rem);
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 555px) {
+    .Detail {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 5rem;
+        padding: 0 2px 0 2px;
+    }
+
+    nav ul {
+        display: none;
+    }
+}

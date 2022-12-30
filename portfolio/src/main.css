@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1B1212;
+}
+
+.Yellow {
+    color: #FFD700;
+    }
+
+.Container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #1B1212;
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 4rem 0 4rem;
+    position: sticky;
+    top: 0;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 2rem;
+    margin: 20px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFD700;
+    transition: 0.2s ease;
+}
+
+.Logo{
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.Logo:hover {
+    color: aliceblue;
+}
+
+.T {
+    color: #FFD700;
+}
+
+.Detail {
+    color: aliceblue;
+    width: 100%; /* set the width of the div */
+    height: 100px; /* set the height of the div */
+    display: flex; /* this makes the div a flex container */
+    justify-content: center; /* this centers the div horizontally within its container */
+    align-items: center; /* this centers the div vertically within its container */
+    margin-top: 14rem;
+    margin-bottom: 20rem;
+    text-align: center;
+}
+
+.Detail h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.Detail p {
+    margin-bottom: 40px;
+}
+
+.Contact {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Contact:hover{
+    background-color: aliceblue;
+    color: #1B1212;
+    transition: 0.5s ease;
+}
+
+.Yellow {
+    color: #FFD700;
+}
+
+.text h2 {
+    color: #FFD700;
+}
+
+#education-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2fr 1fr;
+    margin: 5rem 5rem;
+    padding: 10px;
+    border: 3px solid aliceblue;
+    border-radius: 5px;
+}
+
+.Uni-card h2, .Uni-card p {
+    color: aliceblue;
+}
+
+.Uni-card h2 {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 400px;
+}
+
+.Uni-card h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+#About-me {
+    width: 100%; /* set the width of the div */
+    height: 100px; /* set the height of the div */
+    display: flex; /* this makes the div a flex container */
+    justify-content: center; /* this centers the div horizontally within its container */
+    align-items: center; /* this centers the div vertically within its container */
+    color: aliceblue;
+    font-size: 50px;
+}
+
+#About-me h2 {
+    transform: 1s ease;
+}
+
+#About-me h2:hover{
+    color: #FFD700;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #FFD700;
+    transition: 0.2s ease;
+}
+
+#Prev-container {
+    display: grid;
+    place-items: center;
+    margin: 4rem 5rem;
+    padding: 10px;
+    padding: 60px 0 60px 0;
+    border: 3px solid aliceblue;
+}
+
+.Pre-card {
+    color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Container nav a {
+        text-align: center;
+    }
+    
+    .Logo {
+        width: 100%;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .Uni-card, .Uni-card h2{
+        font-size: small;
+    }
+
+    .Uni-card h2 {
+        line-height: 20px;
+    }
+
+    .Pre-card ul li {
+        padding: 0 20px 0 20px;
+    }
+    
+    .Pre-card p, .Pre-card h2 {
+        text-align: center;
+    }
+}
