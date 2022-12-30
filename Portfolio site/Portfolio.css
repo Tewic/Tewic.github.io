@@ -97,7 +97,47 @@ nav ul li a:hover {
     transition: 0.5s ease;
 }
 
-@media screen and (max-width: 555px) {
+footer {
+    margin: 20px 120px;
+}
+
+.footer-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.footer-container h2 {
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.footer-container ul li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+    font-size: small;
+}
+
+.footer-container ul li a:hover {
+    border-bottom: 2px solid black;
+    transition: 0.2s ease;
+}
+
+.footer-container p {
+    position: absolute;
+    right: 100px;
+    bottom: -120px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
     .Detail {
         text-align: center;
         margin-left: 0%;
@@ -105,7 +145,27 @@ nav ul li a:hover {
         padding: 0 2px 0 2px;
     }
 
+    nav {
+        display: block;
+        text-align: center;
+    }
+
     nav ul {
+        display: none;
+    }
+
+    footer {
+        margin: 10px 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-container p {
         display: none;
     }
 }

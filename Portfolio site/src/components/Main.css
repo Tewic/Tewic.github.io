@@ -1,0 +1,36 @@
+.Detail {
+    color: aliceblue;
+    width: 100%; /* set the width of the div */
+    height: 100px; /* set the height of the div */
+    display: flex; /* this makes the div a flex container */
+    justify-content: center; /* this centers the div horizontally within its container */
+    align-items: center; /* this centers the div vertically within its container */
+    margin-top: 14rem;
+    margin-bottom: 20rem;
+}
+
+.Detail h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.Detail p {
+    margin-bottom: 40px;
+}
+
+.Contact {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Contact:hover{
+    background-color: aliceblue;
+    color: #1B1212;
+    transition: 0.5s ease;
+}
+
