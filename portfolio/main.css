@@ -16,6 +16,11 @@ body {
     color: #FFD700;
     }
 
+#navstick {
+    position: sticky;
+    top: 0;
+}
+
 .Container {
     z-index: 1;
     display: flex;
@@ -23,6 +28,7 @@ body {
     width: 100%;
     background: #1B1212;
     color: aliceblue;
+
 }
 
 nav {
@@ -31,8 +37,6 @@ nav {
     justify-content: space-between;
     padding: 20px 0;
     margin: 0 4rem 0 4rem;
-    position: sticky;
-    top: 0;
 
 }
 
@@ -69,6 +73,12 @@ nav ul li a:hover {
 
 .T {
     color: #FFD700;
+}
+
+.header {
+    color: aliceblue;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .Detail {
@@ -121,9 +131,19 @@ nav ul li a:hover {
     place-items: center;
     grid-template-columns: 2fr 1fr;
     margin: 5rem 5rem;
-    padding: 10px;
+    padding: 20px 0px;
     border: 3px solid aliceblue;
     border-radius: 5px;
+}
+
+.gra-img {
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+}
+
+.Uni-text {
+    font-weight: 700;
+    font-size: large;
 }
 
 .Uni-card h2, .Uni-card p {
@@ -171,10 +191,52 @@ img {
     padding: 10px;
     padding: 60px 0 60px 0;
     border: 3px solid aliceblue;
+    border-radius: 3px;
 }
 
 .Pre-card {
     color: aliceblue;
+}
+
+.Pre-card p {
+    font-weight: 700;
+}
+
+.Pre-card h2 {
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+.Pre-card ul {
+    text-align: left;
+}
+
+.Pre-card ul li {
+    list-style: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.limargin {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    background-color: white;
+    color: #1B1212;
+    padding: 15px 0;
+}
+
+.footer-container p {
+    text-align: center;
+    font-weight: 700;
+}
+
+.respon {
+    border-bottom: 2px solid white;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,6 +248,12 @@ img {
     .Logo {
         width: 100%;
     }
+
+    .header-long {
+        text-align: center;
+        font-size: 40px;
+    }
+
     nav ul {
         display: none;
     }
