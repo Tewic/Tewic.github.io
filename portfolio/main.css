@@ -239,6 +239,23 @@ img {
     border-bottom: 2px solid white;
 }
 
+.other-card h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.other-card ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.other-card ul li,.other-card h2 {
+    color: aliceblue;
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
 
     .Container nav a {
